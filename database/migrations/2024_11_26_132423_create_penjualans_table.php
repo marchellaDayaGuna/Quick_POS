@@ -18,7 +18,6 @@ return new class extends Migration
         
             // Foreign Key
             $table->foreignId('user_id')->constrained('users')->onDelete('cascade');
-            $table->foreignId('produk_id')->constrained('produks')->onDelete('cascade');
             
             $table->timestamps();
         });

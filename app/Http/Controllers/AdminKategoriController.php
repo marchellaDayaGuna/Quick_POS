@@ -8,7 +8,7 @@ use App\Http\Requests\StoreKategoriRequest;
 use App\Http\Requests\UpdateKategoriRequest;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 
-class KategoriController extends Controller
+class AdminKategoriController extends Controller
 {
     /**
      * Display a listing of the resource.

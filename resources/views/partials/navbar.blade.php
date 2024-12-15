@@ -13,7 +13,7 @@
         <!-- Nav Item - Search Dropdown (Visible Only XS) -->
         <li class="nav-item dropdown no-arrow d-sm-none">
             <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="fas fa-search fa-fw"></i>
             </a>
             <!-- Dropdown - Messages -->
@@ -39,7 +39,7 @@
         <li class="nav-item dropdown no-arrow">
             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Admin</span>
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">{{ Auth::user()->name }}</span>
                 <img class="img-profile rounded-circle"
                     src="/img/undraw_profile_1.svg">
             </a>
@@ -65,6 +65,17 @@
         </li>
 
     </ul>
+    {{-- <div class="dropdown">
+        <a class="btn btn-secondary dropdown-toggle" href="#" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown link
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+    </div> --}}
+
 
 </nav>
 

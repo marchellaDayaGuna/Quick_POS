@@ -15,8 +15,9 @@ return new class extends Migration
             $table->id();
             $table->string('nama_produk');
             $table->decimal('harga_produk', 10, 0);
-            $table->string('desc_produk');
-            $table->decimal('diskon', 10, 0); // Adjusted precision for diskon
+            $table->string('desc_produk')->nullable();
+            $table->decimal('diskon', 10, 0)->nullable(); // Adjusted precision for diskon
+            $table->string('stok_barang');
             $table->foreignId('kategori_id')->constrained('kategoris')->onDelete('cascade');
             $table->timestamps();
         });
